@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <style>
+    :root{
+      --card-color:rgb(29, 28, 28);
+      --text:greenyellow;
+      --button-color:rgba(65, 61, 61, 0.712);
+    }
+    body{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      background-color:rgb(15, 15, 15);
+      color:white;
+    }
+    .profile-card img{
+      margin-top:10px;
+      border-radius: 50%;
+      width:80px;
+    }
+    .profile-card{
+      margin-top:15%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      flex-direction: column;
+      width:250px;
+      background-color:var(--card-color);
+      height: 400px;
+      gap:5px;
+      text-align: center;
+    }
+    .location{
+      position: relative;
+      top:-30px;
+      color:var(--text);
+      font-size:10px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .about{
+      position: relative;
+      top:-45px;
+      font-size: 13px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    button{
+      min-width:200px;
+      height:30px;
+      border-radius: 7px;
+      border:none;
+      background-color: var(--button-color);
+      color:white;
+      font-size: 12px;
+      font-family:Arial, Helvetica, sans-serif
+    }
+    button:active{
+      background-color: var(--text);
+      color:black;
+    }
+    .links-buttons{
+      position: relative;
+      bottom:40px;
+      display: flex;
+      flex-direction: column;
+      gap:5px;
+    }
+    .name{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-card">
+  <img src="/assets/images/avatar-jessica.jpeg">
+  <h3 class="name">Jessica Randall</h3>
+  <p class="location">London, United Kingdom</p>
+  <p class="about">"Front-end developer and avid reader."</p>
+  <div class="links-buttons">
+  <button> GitHub</button>
+  <button> Frontend Mentor</button>
+  <button> LinkedIn</button>
+  <button> Twitter</button>
+  <button> Instagram</button>
+  </div>
+  </div>
+</body>
+</html>
